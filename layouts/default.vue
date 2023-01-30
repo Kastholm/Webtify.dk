@@ -1,3 +1,11 @@
+<script>
+/* useHead({
+titleTemplate: (titleChunk)=>{
+  return titleChunk ? `${titleChunk} - Webtify` : 'Webtify'  
+}
+}); */
+import LoadingScreen from '~~/components/LoadingScreen.vue'
+</script>
 <template>
 <LoadingScreen />
   <Nav />
@@ -7,10 +15,6 @@
   <Footer />
 </template>
 
-<script>
-import LoadingScreen from '~~/components/LoadingScreen.vue'
-
-</script>
 
 <style>
 @media only screen and (max-width: 40em) {

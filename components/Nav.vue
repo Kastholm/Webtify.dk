@@ -1,4 +1,12 @@
 <script setup>
+useHead({
+title: "Hej - Webtify",
+meta: [
+  {name: "description", content: "The Rock" },
+  {property: "og:description", content: "The Rock" },
+  {property: "og:image", content: "The Rock" }
+]
+});
 import { gsap } from "gsap";
 
 import { onMounted} from "vue";
@@ -75,7 +83,7 @@ function hideDd(element) {
       <li class="megaTab"><NuxtLink to="/Hjemmesider">Webløsning</NuxtLink><section class="megaDd">
             <div><span class="bg-yellow-400">Hej</span><span class="bg-blue-400">Med</span><span class="bg-red-400">Dig</span></div>
     </section></li>
-      <li class="megaTab"><NuxtLink to="/Markedsføring">Markedsføring</NuxtLink><section class="megaDd">
+      <li class="megaTab"><NuxtLink to="/Markedsfoering">Markedsføring</NuxtLink><section class="megaDd">
             <div><span class="bg-yellow-400">Hej</span><span class="bg-blue-400">Med</span><span class="bg-red-400">Dig</span></div>
     </section></li>
       <li class="megaTab"><NuxtLink to="/Design">Design</NuxtLink><section class="megaDd">
