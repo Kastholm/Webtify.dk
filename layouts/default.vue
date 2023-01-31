@@ -43,6 +43,10 @@ export default {
 
 
 <style>
+body{
+ /*  -webkit-clip-path: inset(1.25rem 1.25rem 8vh 1.25rem round 15px);
+    clip-path: inset(1.25rem 1.25rem 8vh 1.25rem round 15px); */
+}
 @media only screen and (max-width: 40em) {
   html {
     font-size: 2.2vw;
@@ -63,7 +67,9 @@ export default {
     font-size: 1em;
   }
 }
-
+*{
+  @apply text-smooth;
+}
 
 .page-left-enter-active,
 .page-right-enter-active,

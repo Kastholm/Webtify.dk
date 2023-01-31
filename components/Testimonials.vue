@@ -80,16 +80,17 @@ gsap.to(slider, {duration: 1, x: -600});
 
 <style>
 .testi_section {
-     @apply text-center bg-smooth;
+     @apply text-center ;
 }
 .testi_section h2 {
      @apply text-4xl py-4;
 }
 .testi_container  {
-     @apply flex place-content-center lg:flex lg:columns-3 lg:justify-center text-left bg-smooth h-64;
+     @apply flex place-content-center lg:flex lg:columns-3 lg:justify-center text-left  h-64;
 }
 .testi_container span {
-     @apply /* lg:w-1/3 */  p-6 border mx-2 my-4 border-l-orange-500 grid place-content-center text-left ;
+     @apply /* lg:w-1/3 */  p-6 border-l mx-2 my-4 border-l-orange-500 grid place-content-center text-left ;
+     
 }
 .testi_container h3 {
      @apply font-bold text-lg;

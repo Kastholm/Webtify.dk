@@ -102,10 +102,10 @@ ul {
       @apply flex;
 }
 nav {
-      @apply fixed w-screen z-20;
+      @apply fixed w-screen z-20 ;
 }
 .top_nav{
-      @apply bg-midnight text-smooth relative z-50 ;
+      @apply bg-cyangreen text-smooth relative z-50 ;
 }
 .main_nav {
       @apply bg-smooth relative ;
@@ -118,7 +118,7 @@ nav {
       @apply block w-1/3 h-72 grid place-content-center;
 }
 .main_nav li {
-      @apply grid text-center ;
+      @apply grid text-center text-elipse ;
 }
 .main_nav a {
       @apply m-auto p-8 w-44;

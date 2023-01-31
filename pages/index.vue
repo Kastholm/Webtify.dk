@@ -18,14 +18,16 @@ meta: [
 </script>
 
 <template >
-  <div class=" bg-gradient-to-br from-cyangreen to-m via-midnight antialiased bg-no-repeat"> 
+
+  
   <NuxtPage />
+  <GradientsBg1 />
   <ForsideVideo />
   <Testimonials />
   <ForsideInfo />
   <Skills />
   <Services />
-</div>
+
 </template>
 
 <style>
