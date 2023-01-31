@@ -1,6 +1,4 @@
 <script setup>
-import Tab from "./tabs/Tab.vue";
-import Tabs from "./tabs/Tabs.vue";
 import { gsap } from 'gsap';
 import { CSSRulePlugin } from "gsap/CSSRulePlugin";
 import { onMounted} from "vue";
@@ -55,8 +53,8 @@ tabs.forEach(tab => {
 <template>
 
 <h1>Vores Projekter</h1>
-  <Tabs>
-          <Tab title="Hjemmeside1" class="showcase">
+  <PortfolioTabs>
+          <PortfolioTab title="Hjemmeside1" class="showcase">
                <section class="tab_content">
                <div class="showcase_img" style='background-image: url("https://images.pexels.com/photos/102127/pexels-photo-102127.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");'>
                <h3 class="showcase_title">Hej</h3>
@@ -72,9 +70,9 @@ tabs.forEach(tab => {
                          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt excepturi illo eligendi quisquam. Distinctio suscipit sunt hic excepturi deleniti harum?</span>
                </div>
           </section>
-          </Tab>
+          </PortfolioTab>
 
-          <Tab class="showcase" title="Hjemmeside2">
+          <PortfolioTab class="showcase" title="Hjemmeside2">
           <section class="tab_content">
                <div class="showcase_img" style='background-image: url("https://images.pexels.com/photos/102127/pexels-photo-102127.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");'>
                <h3 class="showcase_title">Hej</h3>
@@ -90,9 +88,9 @@ tabs.forEach(tab => {
                          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt excepturi illo eligendi quisquam. Distinctio suscipit sunt hic excepturi deleniti harum?</span>
                </div>
           </section>
-          </Tab>
+          </PortfolioTab>
 
-          <Tab title="Hjemmeside3" class="showcase">
+          <PortfolioTab title="Hjemmeside3" class="showcase">
           <section class="tab_content">
                <div class="showcase_img" style='background-image: url("https://images.pexels.com/photos/102127/pexels-photo-102127.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");'>
                <h3 class="showcase_title">Hej</h3>
@@ -108,9 +106,9 @@ tabs.forEach(tab => {
                          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt excepturi illo eligendi quisquam. Distinctio suscipit sunt hic excepturi deleniti harum?</span>
                </div>
           </section>
-          </Tab>
+          </PortfolioTab>
 
-          <Tab class="showcase" title="Hjemmeside4">
+          <PortfolioTab class="showcase" title="Hjemmeside4">
            <section class="tab_content">
                <div class="showcase_img" style='background-image: url("https://images.pexels.com/photos/102127/pexels-photo-102127.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");'>
                <h3 class="showcase_title">Hej</h3>
@@ -126,9 +124,9 @@ tabs.forEach(tab => {
                          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt excepturi illo eligendi quisquam. Distinctio suscipit sunt hic excepturi deleniti harum?</span>
                </div>
           </section>
-          </Tab>
+          </PortfolioTab>
 
-          <Tab class="showcase" title="Hjemmeside5">
+          <PortfolioTab class="showcase" title="Hjemmeside5">
           <section class="tab_content">
                <div class="showcase_img" style='background-image: url("https://images.pexels.com/photos/102127/pexels-photo-102127.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");'>
                <h3 class="showcase_title">Hej</h3>
@@ -144,8 +142,8 @@ tabs.forEach(tab => {
                          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt excepturi illo eligendi quisquam. Distinctio suscipit sunt hic excepturi deleniti harum?</span>
                </div>
           </section>
-          </Tab>
-  </Tabs>
+          </PortfolioTab>
+  </PortfolioTabs>
 
 </template>
 

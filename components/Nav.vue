@@ -1,12 +1,4 @@
 <script setup>
-useHead({
-title: "Hej - Webtify",
-meta: [
-  {name: "description", content: "The Rock" },
-  {property: "og:description", content: "The Rock" },
-  {property: "og:image", content: "The Rock" }
-]
-});
 import { gsap } from "gsap";
 
 import { onMounted} from "vue";

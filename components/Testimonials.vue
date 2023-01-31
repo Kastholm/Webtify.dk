@@ -2,15 +2,8 @@
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { onMounted} from "vue";
-import stars from "../assets/img/stars.gif";
 import { testimonialsdata } from "../assets/json/testimonials.json";
 
-/* export default {;
-  components: {
-    Tabs,
-    Tab
-  }
-} */
 onMounted(async () => {
   // Register gsap plugin
   gsap.registerPlugin(ScrollTrigger);
@@ -70,7 +63,7 @@ gsap.to(slider, {duration: 1, x: -600});
     <SwiperSlide v-for="testimonial in testimonialsdata"  :key="testimonial"  >
      <div class="testi_container" >
      <span class="testi_box" >
-          <img class="w-24 bg-smooth" loading="lazy" width="85" height="17" :src="stars" alt="">
+          <img class="w-24 bg-smooth" loading="lazy" width="85" height="17" src="/img/stars.gif" alt="">
           <h3>{{testimonial.header}}</h3>
           <blockquote>{{testimonial.review}}</blockquote>
      </span>

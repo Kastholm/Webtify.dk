@@ -1,24 +1,28 @@
 <script setup>
-useHead({
+/* useHead({
 title: "Forside - Webtify",
 meta: [
   {name: "description", content: "The Rock" },
   {property: "og:description", content: "The Rock" },
   {property: "og:image", content: "The Rock" }
 ]
-});
- import Video from '~~/components/forside/Video.vue';
- import Info from '~~/components/forside/Info.vue';
- import Testimonials from '~~/components/Testimonials.vue';
- import Skills from '~~/components/Skills.vue'
+}); */
+useServerSeoMeta({
+  title: 'My Amazing Siteee',
+  ogTitle: 'My Amazing Site',
+  description: 'This is my amazing site, let me tell you all about it.',
+  ogDescription: 'This is my amazing site, let me tell you all about it.',
+  ogImage: 'https://example.com/image.png',
+  twitterCard: 'summary_large_image',
+})
 </script>
 
 <template >
   <div class=" bg-gradient-to-br from-cyangreen to-m via-midnight antialiased bg-no-repeat"> 
   <NuxtPage />
-  <Video />
+  <ForsideVideo />
   <Testimonials />
-  <Info />
+  <ForsideInfo />
   <Skills />
   <Services />
 </div>

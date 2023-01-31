@@ -1,17 +1,11 @@
 <script>
-/* useHead({
-titleTemplate: (titleChunk)=>{
-  return titleChunk ? `${titleChunk} - Webtify` : 'Webtify'  
-}
-}); */
-import LoadingScreen from '~~/components/LoadingScreen.vue'
 </script>
 <template>
 <LoadingScreen />
   <Nav />
-  <div>
+  <main>
       <slot /> 
-  </div>
+  </main>
   <Footer />
 </template>
 
