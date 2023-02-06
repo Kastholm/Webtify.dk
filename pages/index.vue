@@ -19,7 +19,6 @@ meta: [
 
 <template >
 
-  
   <NuxtPage />
   <GradientsBg1 />
   <ForsideVideo />

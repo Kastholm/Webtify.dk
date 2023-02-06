@@ -1,17 +1,19 @@
 <script setup>
 import { gsap } from "gsap";
-
+import ScrollTrigger from "gsap/ScrollTrigger";
 import { onMounted} from "vue";
 
   onMounted(async () => { 
-        // Register gsap plugin
+// Register gsap plugin
+gsap.registerPlugin(ScrollTrigger);
+
   gsap.from("nav", {
-    duration: 1,
-    y: "-20%",
-    ease: "circ"
+    duration: .5,
+    y: "-100%",
+    ease: "ease"
 });
 /* -------------------------------------------------------------------------- */
-/*                             Finder Nav Section                             */
+/*                             Finder Nav div                             */
 /* -------------------------------------------------------------------------- */
 let megaTabs = gsap.utils.toArray('.megaTab');
 
@@ -55,9 +57,43 @@ function hideDd(element) {
   });
 }
 
+const navScroll = gsap.timeline({defaults: {ease: "ease", duration: .3}});
+ 
+ScrollTrigger.create({
+    animation: navScroll ,
+    trigger: ".video",
+    /* markers: true, */
+    start: "top -10% ",
+    end: "bottom 30%",
+    once: false,
+    scrub: 1
+});
+
+navScroll
+      .to('.top_nav',{
+            height: '0',
+            overflow:'hidden'
+            }, 0)
+      .to('.main_nav', {
+            backgroundColor: '#0A6C74',
+      }, 1)
+      .to('.main_nav img', {
+      width: '5rem',
+      }, 1)
+      .to('.main_nav a', {
+            padding: '1.4rem',
+            
+            color: '#fbfbfb'
+      }, 1)
+       .to('.megaDd', {
+             marginTop: "-1.5%",
+       })
+
   });
 
- 
+
+
+
 </script>
 
 <template>
@@ -72,15 +108,15 @@ function hideDd(element) {
       <img src="https://i.ibb.co/JCyKc3F/Webber-blue-logo-moon-web.gif" alt="Flowers">
       </picture>
       <li><NuxtLink to="/">Forside</NuxtLink></li>
-      <li class="megaTab"><NuxtLink to="/Hjemmesider">Webløsning</NuxtLink><section class="megaDd">
+      <li class="megaTab"><NuxtLink to="/Hjemmesider">Webløsning</NuxtLink><div class="megaDd">
             <div><span class="bg-yellow-400">Hej</span><span class="bg-blue-400">Med</span><span class="bg-red-400">Dig</span></div>
-    </section></li>
-      <li class="megaTab"><NuxtLink to="/Markedsfoering">Markedsføring</NuxtLink><section class="megaDd">
+    </div></li>
+      <li class="megaTab"><NuxtLink to="/Markedsfoering">Markedsføring</NuxtLink><div class="megaDd">
             <div><span class="bg-yellow-400">Hej</span><span class="bg-blue-400">Med</span><span class="bg-red-400">Dig</span></div>
-    </section></li>
-      <li class="megaTab"><NuxtLink to="/Design">Design</NuxtLink><section class="megaDd">
+    </div></li>
+      <li class="megaTab"><NuxtLink to="/Design">Design</NuxtLink><div class="megaDd">
            <div><span class="bg-yellow-400">Hej</span><span class="bg-blue-400">Med</span><span class="bg-red-400">Dig</span></div>
-    </section></li>
+    </div></li>
       <li><NuxtLink to="/Kontakt">Kontakt</NuxtLink></li>
   </ul>
 </nav>
@@ -111,10 +147,10 @@ nav {
       @apply bg-smooth relative ;
       transition: 1s;
 }
-.main_nav section div {
+.main_nav div div {
       @apply flex columns-3 relative;
 }
-.main_nav section div span {
+.main_nav div div span {
       @apply block w-1/3 h-72 grid place-content-center;
 }
 .main_nav li {

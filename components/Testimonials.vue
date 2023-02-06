@@ -11,15 +11,15 @@ onMounted(async () => {
   // Floating Banner Effect
   const testbox = gsap.timeline({defaults: {ease: "ease"}});
   testbox
-  .from('.testi_box', {y: '80%', stagger: .1,  duration: .5, 
+  .from('.testi_box', {y: '80%', rotateX: '100', stagger: .1,  duration: .4, 
         })
-  .from('.testi_box *', {opacity: '0',  duration: .5, 
-        });
+  /* .from('.testi_box *', {rotateX: '50',  duration: .5, 
+        }); */
 
     ScrollTrigger.create({
     animation: testbox ,
     trigger: ".testi_section",
-    markers: true,
+    /* markers: true, */
     start: "top 70% ",
     end: "bottom 30%",
     once: true,

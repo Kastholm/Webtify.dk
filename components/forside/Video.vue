@@ -1,5 +1,5 @@
 <template>
-  <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/693992218?h=06b451780d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Webtify video"></iframe></div><!-- <script src="https://player.vimeo.com/api/player.js"></script> -->
+  <div class="video" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/693992218?h=06b451780d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Webtify video"></iframe></div><!-- <script src="https://player.vimeo.com/api/player.js"></script> -->
 <div class="button_container ">
   <figure class="glightbox_video "> 
                   <svg width="101" height="101" viewBox="0 0 131 131" fill="none" xmlns="http://www.w3.org/2000/svg">

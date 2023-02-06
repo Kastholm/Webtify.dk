@@ -12,7 +12,7 @@
     "nuxt": "^3.1.0"
   },
   "dependencies": {
-    "gsap": "^3.11.4",
+    "gsap": "npm:@gsap/shockingly@^3.11.4",
     "nuxt-swiper": "^0.1.9",
     "preline": "^1.7.0",
     "three": "^0.149.0",
